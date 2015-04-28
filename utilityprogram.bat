@@ -8,6 +8,18 @@ timeout /5
 cls
 REM Draws menu
 echo UTILITY PROGRAM
+echo ping   [1]
+echo tskmgr [2]
+REM gets menu input
+SET /p menuinput=Enter your choice
+
+if menuinput == 1
+GOTO ping
+if menuinput == 2
+GOTO tskmgr
+
+:ping
 echo ping
-REM begins menu system
-SET /p 
+
+:tskmgr
+echo tskmgr
